@@ -1,0 +1,19 @@
+.nav {
+    margin-bottom: 20px;
+}
+
+.bioCard {
+    background-image: url("Andy_1.jpg");
+    opacity: 70%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+font-size: 40px;
+}
+
+.bioCard:hover { 
+    opacity: 1;
+    font-size: 60px;
+}

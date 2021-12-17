@@ -11,9 +11,43 @@
     justify-content: center;
     color: white;
 font-size: 40px;
+
 }
 
 .bioCard:hover { 
     opacity: 1;
     font-size: 60px;
+}
+
+.projectCard {
+    background-image: url("eyeball.png");
+    opacity: 70%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+font-size: 40px;
+}
+
+.projectCard:hover { 
+    opacity: 1;
+    font-size: 60px;
+}
+
+.contactCard {
+    background-image: url("FFB.png");
+    opacity: 70%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+font-size: 35px;
+text-align: center;
+}
+
+.contactCard:hover { 
+    opacity: 1;
+    font-size: 50px;
 }

@@ -16,7 +16,7 @@ font-size: 40px;
 
 .bioCard:hover { 
     opacity: 1;
-    font-size: 60px;
+    /* font-size: 60px; */
 }
 
 .projectCard {
@@ -49,5 +49,5 @@ text-align: center;
 
 .contactCard:hover { 
     opacity: 1;
-    font-size: 50px;
+    /* font-size: 50px; */
 }

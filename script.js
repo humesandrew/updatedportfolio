@@ -22,6 +22,35 @@ bioCard.onclick = function displayBioCard() {
 
 /// creating the portfolio card on click///
 
+const projectCard = document.getElementById("card2");
+projectCard.onclick = function displayProjectCard() {
+    projectCard.textContent = '';
+    var projectCardEl = document.createElement("card");
+    projectCardEl.setAttribute("id", "projectCardEl");
+
+
+    projectCardEl.setAttribute("class", "card-header");
+    var projectText = document.getElementById("projectCardEl");
+   projectCardEl.textContent = "Projects";
+    
+    projectCard.appendChild(projectCardEl);
+
+
+    var projectCardApiEl = document.createElement("card");
+    projectCardApiEl.setAttribute("id", "projectCardApiEl");
+    projectCardApiEl.setAttribute("class", "card col-10");
+    projectCard.appendChild(projectCardApiEl);
+    
+
+    var createProjectButton = document.createElement("button");
+    projectCardApiEl.appendChild(createProjectButton);
+    createProjectButton.textContent = "BellyBuster: the App";
+    createProjectButton.setAttribute("class", "btn btn-outline-secondary btn-lg");
+
+    projectCard.style.justifyContent = "space-around";
+    projectCard.style.alignItems = "row";
+    }
+
 
 
 

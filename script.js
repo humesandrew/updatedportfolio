@@ -23,6 +23,8 @@ bioCard.onclick = function displayBioCard() {
 /// creating the portfolio card on click///
 
 const projectCard = document.getElementById("card2");
+const createProjectBreak = document.createElement("hr");
+
 projectCard.onclick = function displayProjectCard() {
     projectCard.textContent = '';
     var projectCardEl = document.createElement("card");
@@ -39,25 +41,30 @@ projectCard.onclick = function displayProjectCard() {
     var projectCardApiEl = document.createElement("card");
     projectCardApiEl.setAttribute("id", "projectCardApiEl");
     projectCardApiEl.setAttribute("class", "card col-10");
-    projectCardApiEl.textContent = "Click the link to see the deployed project.";
+    projectCardApiEl.textContent = "";
     projectCardApiEl.style.color = "black";
     projectCardApiEl.style.fontSize = "20px";
+    projectCardApiEl.style.backgroundColor = "transparent";
     projectCard.appendChild(projectCardApiEl);
     
 
     var createProjectButton = document.createElement("button");
     projectCardApiEl.appendChild(createProjectButton);
     createProjectButton.textContent = "BellyBuster: the App";
-    createProjectButton.setAttribute("class", "btn btn-outline-secondary btn-lg");
+    createProjectButton.setAttribute("class", "btn btn-secondary btn-lg btn-light");
     createProjectButton.setAttribute("id", "projectButton");
+    createProjectButton.setAttribute("style", "margin-top: 20px");
+    // var createProjectBreak = document.createElement("hr");
+    createProjectButton.appendChild(createProjectBreak);
     var clickProjectButton = document.getElementById("projectButton");
     clickProjectButton.onclick = function () {
       window.open("https://humesandrew.github.io/Belly-Buster/");
     }
 
     var createApiCard = document.createElement("div");
-    createApiCard.textContent = "hello";
+    createApiCard.textContent = "";
     createApiCard.setAttribute("id", "apiCard");
+    createApiCard.setAttribute("style", "margin-top: 30px;");
     projectCardApiEl.appendChild(createApiCard);
 
     
@@ -73,14 +80,16 @@ projectCard.onclick = function displayProjectCard() {
             var repoName = data[i].name;
             var repoUrl = data[i].html_url;
   
+            
           
 
-                var repoEl = document.createElement('button');
+                var repoEl = document.createElement('a');
                 repoEl.textContent = repoName;
                 repoEl.setAttribute("id", repoName);
-                repoEl.setAttribute("url", repoUrl);
-              repoEl.setAttribute('class', 'btn btn-outline-secondary btn-block');
-            
+               
+                // repoEl.setAttribute("url", repoUrl);//
+              repoEl.setAttribute('class', 'btn btn-secondary btn-block');
+            repoEl.setAttribute('href', repoUrl);
               
                projectCardApiEl.appendChild(repoEl);
             

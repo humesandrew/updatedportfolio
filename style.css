@@ -51,3 +51,14 @@ text-align: center;
     opacity: 1;
     /* font-size: 50px; */
 }
+
+
+@media (max-width: 500px) {
+    .container {
+     background-color: yellow;
+    }
+
+    .nav {
+        background-color: yellow;
+    }
+  }
